@@ -24,7 +24,7 @@ int main(void){
 	ADCSRA |= (1<<ADSC);                //Start converting
 	
 	for(;;){            //The infinite loop
-		adc_value = ADCW;    //Read the ADC value, really that's just it
+		adc_value = ADCW;    /
 		if(300 < adc_value&& adc_value < 700 ){
 			PORTD &= ~(1<<5);
 			
